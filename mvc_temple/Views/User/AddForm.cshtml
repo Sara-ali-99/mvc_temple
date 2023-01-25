@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<html>
+<head>
+    <title>Add user</title>
+    <style>
+        *{
+            text-align:center;
+            padding:5px;
+            margin:20px;
+        }
+
+        a{
+          color:black;
+          border:none;
+        }
+    </style>
+</head>
+<body>
+    <form action="/User/adduser">
+        <label for="name">name</label>
+        <input id="name" name="name" type="text" />
+        <br />
+
+        <label for="email">email</label>
+        <input id="email" name="email" type="text" />
+        <br />
+        <label for="phone">phone</label>
+        <input id="phone" name="phone" type="text" />
+        <br />
+            <label for="willAttendtrue">yes</label>
+        <input id="willAttendtrue" value="yes" name="willAttend" type="radio" />
+        <label for="willAttendfalse">no</label>
+        <input id="willAttendfalse" value="no" name="willAttend" type="radio" />
+        <br />
+
+        <input type="submit" value="Add" />
+    </form>
+</body>
+</html>
+
